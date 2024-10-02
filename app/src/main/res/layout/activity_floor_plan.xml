@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/floor_plan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/floor_plan" />
+
+    <ImageView
+        android:id="@+id/fire_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fire"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/user_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxWidth="25dp"
+        android:maxHeight="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location"
+        android:visibility="gone" />
+
+    <com.example.firedetectionapp.DrawEscapeRoute
+        android:id="@+id/draw_escape_route"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
